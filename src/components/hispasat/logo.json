@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_hispasat_logos",
+  "info": {
+    "displayName": "logo",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

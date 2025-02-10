@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_hispasat_pro_dev_lists",
+  "info": {
+    "displayName": "pro-dev_list",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.pro-dev"
+    },
+    "background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "grid": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hispasat.grid"
+    }
+  }
+}

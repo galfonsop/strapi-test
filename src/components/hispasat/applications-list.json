@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_hispasat_applications_lists",
+  "info": {
+    "displayName": "Applications_list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "applications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.application"
+    },
+    "title": {
+      "type": "string"
+    },
+    "view_all": {
+      "type": "string"
+    },
+    "background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "grid": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hispasat.grid"
+    },
+    "viewAll_link": {
+      "type": "string"
+    }
+  }
+}

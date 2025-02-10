@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_hispasat_incidences_lists",
+  "info": {
+    "displayName": "Incidences_list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "incidences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.incidences"
+    },
+    "title": {
+      "type": "string"
+    },
+    "view_all": {
+      "type": "string"
+    },
+    "background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "grid": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hispasat.grid"
+    }
+  }
+}

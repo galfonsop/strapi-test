@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_hispasat_slide_lists",
+  "info": {
+    "displayName": "Slide-list",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.slide"
+    },
+    "background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

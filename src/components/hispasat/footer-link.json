@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_hispasat_footer_links",
+  "info": {
+    "displayName": "footer_link",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

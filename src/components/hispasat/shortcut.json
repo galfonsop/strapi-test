@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_hispasat_shortcuts",
+  "info": {
+    "displayName": "shortcut",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

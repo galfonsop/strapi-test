@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_hispasat_footer_blocks",
+  "info": {
+    "displayName": "footer_block",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.footer-link"
+    }
+  }
+}

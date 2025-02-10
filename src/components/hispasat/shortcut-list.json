@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_hispasat_shortcut_lists",
+  "info": {
+    "displayName": "shortcut_list",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "grid": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hispasat.grid"
+    },
+    "background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "shortcuts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.shortcut"
+    }
+  }
+}

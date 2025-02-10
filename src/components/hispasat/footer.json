@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_hispasat_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.footer-block"
+    },
+    "social_logos": {
+      "displayName": "logo",
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.logo"
+    },
+    "certification_logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hispasat.logo"
+    },
+    "enterprise_copyright": {
+      "type": "string"
+    }
+  }
+}

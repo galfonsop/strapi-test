@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_hispasat_applications",
+  "info": {
+    "displayName": "application"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string",
+      "default": "vass_outline:hispasat_app"
+    },
+    "link": {
+      "type": "string"
+    },
+    "TYPE": {
+      "type": "enumeration",
+      "enum": [
+        "CLIENT",
+        "USER"
+      ]
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

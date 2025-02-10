@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_hispasat_pro_devs",
+  "info": {
+    "displayName": "pro-dev",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "moreInfo": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

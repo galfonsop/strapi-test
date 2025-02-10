@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_hispasat_incidences",
+  "info": {
+    "displayName": "incidences",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVE",
+        "CLOSED",
+        "REPORTED",
+        "PENDING"
+      ]
+    },
+    "info_title": {
+      "type": "string"
+    },
+    "info_description": {
+      "type": "string"
+    },
+    "info_date": {
+      "type": "datetime"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_hispasat_news",
+  "info": {
+    "displayName": "news",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "viewMore": {
+      "type": "string"
+    }
+  }
+}

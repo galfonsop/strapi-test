@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-02-10T09:22:27.792Z"
+    "x-generation-date": "2025-02-12T12:44:32.332Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -9759,6 +9759,12 @@
               "defaultSeo": {
                 "$ref": "#/components/schemas/SharedSeoComponent"
               },
+              "menu": {
+                "$ref": "#/components/schemas/HispasatMenuComponent"
+              },
+              "footer": {
+                "$ref": "#/components/schemas/HispasatFooterComponent"
+              },
               "locale": {
                 "type": "string"
               },
@@ -10435,6 +10441,12 @@
           "defaultSeo": {
             "$ref": "#/components/schemas/SharedSeoComponent"
           },
+          "menu": {
+            "$ref": "#/components/schemas/HispasatMenuComponent"
+          },
+          "footer": {
+            "$ref": "#/components/schemas/HispasatFooterComponent"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -10620,6 +10632,12 @@
                 },
                 "defaultSeo": {
                   "$ref": "#/components/schemas/SharedSeoComponent"
+                },
+                "menu": {
+                  "$ref": "#/components/schemas/HispasatMenuComponent"
+                },
+                "footer": {
+                  "$ref": "#/components/schemas/HispasatFooterComponent"
                 },
                 "createdAt": {
                   "type": "string",
@@ -10831,6 +10849,111 @@
           }
         }
       },
+      "HispasatMenuItemComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          }
+        }
+      },
+      "HispasatMenuComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HispasatMenuItemComponent"
+            }
+          }
+        }
+      },
+      "HispasatFooterLinkComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "text": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          }
+        }
+      },
+      "HispasatFooterBlockComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "block": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HispasatFooterLinkComponent"
+            }
+          }
+        }
+      },
+      "HispasatLogoComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          }
+        }
+      },
+      "HispasatFooterComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HispasatFooterBlockComponent"
+            }
+          },
+          "social_logos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HispasatLogoComponent"
+            }
+          },
+          "certification_logos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HispasatLogoComponent"
+            }
+          },
+          "enterprise_copyright": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          }
+        }
+      },
       "HomeRequest": {
         "type": "object",
         "required": [
@@ -10875,9 +10998,6 @@
                     "hispasat.slide-list": "#/components/schemas/HispasatSlideListComponent"
                   }
                 }
-              },
-              "footer": {
-                "$ref": "#/components/schemas/HispasatFooterComponent"
               },
               "locale": {
                 "type": "string"
@@ -10980,9 +11100,6 @@
               }
             }
           },
-          "footer": {
-            "$ref": "#/components/schemas/HispasatFooterComponent"
-          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -11066,9 +11183,6 @@
                       "hispasat.slide-list": "#/components/schemas/HispasatSlideListComponent"
                     }
                   }
-                },
-                "footer": {
-                  "$ref": "#/components/schemas/HispasatFooterComponent"
                 },
                 "createdAt": {
                   "type": "string",
@@ -11481,209 +11595,6 @@
           },
           "grid": {
             "$ref": "#/components/schemas/HispasatGridComponent"
-          }
-        }
-      },
-      "HispasatFooterLinkComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "text": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          }
-        }
-      },
-      "HispasatFooterBlockComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "block": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HispasatFooterLinkComponent"
-            }
-          }
-        }
-      },
-      "HispasatLogoComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "title": {
-            "type": "string"
-          },
-          "icon": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          }
-        }
-      },
-      "HispasatFooterComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "logo": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "number"
-              },
-              "documentId": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {},
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number",
-                "format": "float"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {},
-              "related": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "folder": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "folderPath": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "updatedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "publishedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "createdBy": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "updatedBy": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "documentId": {
-                    "type": "string"
-                  }
-                }
-              },
-              "locale": {
-                "type": "string"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "blocks": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HispasatFooterBlockComponent"
-            }
-          },
-          "social_logos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HispasatLogoComponent"
-            }
-          },
-          "certification_logos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/HispasatLogoComponent"
-            }
-          },
-          "enterprise_copyright": {
-            "type": "string"
           }
         }
       },

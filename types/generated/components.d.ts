@@ -44,7 +44,7 @@ export interface HispasatFooter extends Struct.ComponentSchema {
     blocks: Schema.Attribute.Component<'hispasat.footer-block', true>;
     certification_logos: Schema.Attribute.Component<'hispasat.logo', true>;
     enterprise_copyright: Schema.Attribute.String;
-    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo: Schema.Attribute.String;
     social_logos: Schema.Attribute.Component<'hispasat.logo', true>;
   };
 }
@@ -112,6 +112,18 @@ export interface HispasatGrid extends Struct.ComponentSchema {
   };
 }
 
+export interface HispasatHeader extends Struct.ComponentSchema {
+  collectionName: 'components_hispasat_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'arrowUp';
+  };
+  attributes: {
+    logo: Schema.Attribute.Component<'hispasat.logo', false>;
+    notifications: Schema.Attribute.String;
+  };
+}
+
 export interface HispasatIncidences extends Struct.ComponentSchema {
   collectionName: 'components_hispasat_incidences';
   info: {
@@ -156,6 +168,29 @@ export interface HispasatLogo extends Struct.ComponentSchema {
   };
   attributes: {
     icon: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HispasatMenu extends Struct.ComponentSchema {
+  collectionName: 'components_hispasat_menus';
+  info: {
+    displayName: 'Menu';
+    icon: 'bulletList';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'hispasat.menu-item', true>;
+  };
+}
+
+export interface HispasatMenuItem extends Struct.ComponentSchema {
+  collectionName: 'components_hispasat_menu_items';
+  info: {
+    displayName: 'Menu_item';
+    icon: 'book';
+  };
+  attributes: {
     link: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -357,9 +392,12 @@ declare module '@strapi/strapi' {
       'hispasat.footer-block': HispasatFooterBlock;
       'hispasat.footer-link': HispasatFooterLink;
       'hispasat.grid': HispasatGrid;
+      'hispasat.header': HispasatHeader;
       'hispasat.incidences': HispasatIncidences;
       'hispasat.incidences-list': HispasatIncidencesList;
       'hispasat.logo': HispasatLogo;
+      'hispasat.menu': HispasatMenu;
+      'hispasat.menu-item': HispasatMenuItem;
       'hispasat.news': HispasatNews;
       'hispasat.news-list': HispasatNewsList;
       'hispasat.pro-dev': HispasatProDev;

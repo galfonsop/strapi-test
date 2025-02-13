@@ -31,16 +31,6 @@
         "hispasat.pro-dev-list",
         "hispasat.slide-list"
       ]
-    },
-    "footer": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "hispasat.footer"
     }
   }
 }

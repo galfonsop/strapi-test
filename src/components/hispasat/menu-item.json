@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_hispasat_menu_items",
+  "info": {
+    "displayName": "Menu_item",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

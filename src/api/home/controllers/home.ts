@@ -36,7 +36,6 @@
 // }));
 
 import { factories } from "@strapi/strapi";
-import { on } from "events";
 
 export default factories.createCoreController(
   "api::home.home",
@@ -77,22 +76,6 @@ export default factories.createCoreController(
                 populate: "*",
               },
               "hispasat.pro-dev-list": {
-                populate: "*",
-              },
-            },
-          },
-          footer: {
-            populate: {
-              blocks: {
-                populate: "*",
-              },
-              logo: {
-                populate: "*",
-              },
-              social_logos: {
-                populate: "*",
-              },
-              certification_logos: {
                 populate: "*",
               },
             },

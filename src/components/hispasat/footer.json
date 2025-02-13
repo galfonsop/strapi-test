@@ -7,17 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "logo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "blocks": {
       "type": "component",
       "repeatable": true,
@@ -35,6 +24,9 @@
       "component": "hispasat.logo"
     },
     "enterprise_copyright": {
+      "type": "string"
+    },
+    "logo": {
       "type": "string"
     }
   }
